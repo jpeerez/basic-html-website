@@ -1,0 +1,140 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    /* border: 5px solid black; */
+    
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+header img{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* margin-right: 20px;
+    border: 3px solid #fff; */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header h2 {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Estilos para las secciones */
+section {
+    margin: 20px auto;
+    padding: 20px;
+    /* max-width: 800px;
+    background-color: #fff; */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h3 {
+    margin-top: 0;
+    font-size: 1.8em;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #f4f4f4;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Estilos para la experiencia laboral */
+section p strong {
+    color: #333;
+}
+
+section p a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+section p a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para las reseñas */
+blockquote {
+    background-color: #f9f9f9;
+    border-left: 5px solid #007BFF;
+    margin: 10px 0;
+    padding: 10px 20px;
+    font-style: italic;
+}
+
+blockquote footer {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #f8f8f8;
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+}
