@@ -1,136 +1,217 @@
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
+/* Reset basic styles for all elements */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    box-sizing: border-box;
 }
 
-/* Encabezado */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header Styles */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #fff;
-    padding: 20px;
-    border-bottom: 2px solid #000;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
 }
 
-header div {
+header .logo img {
+    width: 64px;
+    height: auto;
+}
+
+header nav ul {
     display: flex;
-    align-items: center;
-} 
-
-header img {
-    width: 100px;
-    height: 100px;
-    margin-right: 10px;
-    border-radius: 50%;
+    list-style-type: none;
 }
 
-h1 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-left: 10px;
-    text-align: center;
+header nav ul li {
+    margin-right: 20px;
 }
 
-nav a {
+header nav ul li a {
+    color: #fff;
     text-decoration: none;
-    color: #000;
-    margin: 0 10px;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-/* Título principal */
-section {
-    text-align: center;
-    margin: 20px 0;
+header nav ul li a:hover {
+    color: #ff6347;
 }
 
-h1 {
-    font-size: 32px;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-p {
-    color: gray;
-}
-
-/* Contenedor principal */
+/* Main Content Styles */
 main {
-    width: 95%;
-    margin: auto;
-    background: #fff;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 40px;
 }
 
-/* Tablas */
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-td {
-    vertical-align: top;
-    padding: 15px;
-    border: 2px solid #000;
+/* Section Title Styles */
+h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
 }
 
 h3 {
-    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #444;
 }
 
-/* Proyectos */
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    padding: 5px 0;
-}
-
-/* Enlaces */
-a {
-    color: blue;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Reseñas */
-section h3 {
-    margin-top: 30px;
+/* Intro Section */
+.intro {
     text-align: center;
+    margin-bottom: 50px;
 }
 
-.reviews-container {
-    display: flex;
-    justify-content: space-between;
+.intro h1 {
+    font-size: 3em;
+    color: #333;
+}
+
+.intro p {
+    font-size: 1.2em;
+    color: #666;
     margin-top: 10px;
 }
 
-.review-card {
-    background: #f8f8f8;
+/* Projects Section */
+.projects ul {
+    list-style-type: none;
+}
+
+.projects ul li {
+    background-color: #fff;
+    margin-bottom: 10px;
     padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-    width: 30%;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1.1em;
 }
 
-.review-card p {
-    margin: 5px 0;
+/* Work Experience Section */
+.work-experience article {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
 }
 
-/* Pie de página */
+.work-experience article h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.work-experience article a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ff6347;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.work-experience article a:hover {
+    text-decoration: underline;
+}
+
+/* Education Section */
+.education ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.education p {
+    font-size: 1.1em;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Reviews Section */
+.reviews .review {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.reviews .review footer {
+    text-align: right;
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Footer Styles */
 footer {
     text-align: center;
-    margin-top: 20px;
-    padding: 10px;
-    font-weight: bold;
+    margin-top: 40px;
+    font-size: 1.1em;
+    color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .intro h1 {
+        font-size: 2.5em;
+    }
+
+    .intro p {
+        font-size: 1.1em;
+    }
+
+    .projects ul li {
+        padding: 12px;
+    }
+
+    .work-experience article,
+    .reviews .review {
+        padding: 15px;
+    }
+
+    .reviews .review footer {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro h1 {
+        font-size: 2em;
+    }
+
+    .intro p {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 1.4em;
+    }
 }

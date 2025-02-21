@@ -4,93 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./basic.css">
-    <title>Frontend Developer PortFolio</title>
+    <title>Basic HTML Website</title>
 </head>
 <body>
     <header>
-        <div>
-            <img src="./img/logotipo.webp" alt="logo">
-            <h1>Juan Antonio Perez Perez</h1>
+        <div class="logo">
+          <img width="64" src="./img/logotipo.webp" alt="Logo">
         </div>
         <nav>
+          <ul>
+            <li><a href="basic.html">Home</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="article.html">Articles</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="intro">
+            <h1>Frontend Developer</h1>
+            <p>I specialize in creating websites using HTML, CSS, and JavaScript. Check out my work below!</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects">
+            <h2>Projects</h2>
             <ul>
-                <a href="#">Home</a>
-                <a href="#">Projects</a>
-                <a href="#">Article</a>
-                <a href="#">Contact</a>
+                <li>HTML Only Portfolio</li>
+                <li>Calculator</li>
+                <li>Quiz App</li>
+                <li>Countdown Timer</li>
+                <li>Product Upcoming Page</li>
             </ul>
-    </header>
+        </section>
 
-    <section>
-        <h1>Frontend Developer</h1>
-        <p>html only with proper layout, no styling</p>
-    </section>
+        <!-- Work Experience Section -->
+        <section class="work-experience">
+            <h2>Work Experience</h2>
+            <article>
+                <h3>roadmap.sh</h3>
+                <p>Worked on frontend projects and solved key challenges for the platform.</p>
+                <a href="#">Visit my Profile</a>
+            </article>
+            <article>
+                <h3>OpenSource Work</h3>
+                <p>Contributed to over 50 open-source projects and gained recognition on GitHub.</p>
+                <a href="https://github.com/yourusername">Visit my GitHub Profile</a>
+            </article>
+        </section>
 
-    <main>
-        <table border="1" width="100%" cellspacing="0" cellpadding="10">
-            <tr>
-                <td width="30%">
-                    <h3>Projects</h3>
-                    <ul>
-                        <li>Html only PortFolio</li>
-                        <li>Calculator</li>
-                        <li>Quiz App</li>
-                        <li>Countdown timer</li>
-                        <li>Product Upcoming Page</li>
-                    </ul>
-                </td>
-                <td width="40%">
-                    <h3>Work Experience</h3>
-                    <p><strong>roadmap.sh</strong></p>
-                    <p>Solved all the frontend projects</p>
-                    <a href="#">Visit my Profile</a>
-                    <br><br>
-                    <h3>OpenSource Work</h3>
-                    <p>Contributed to 50 opensource projects. Made my own projects with 200 GitHub Stars.</p>
-                    <a href="#">Visit my GitHub Profile</a>
-                </td>
-                <td width="30%">
-                    <h3>Education</h3>
-                    <p>Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30 sessions.</p>
-                    <p><strong>Courses I took:</strong></p>
-                    <ul>
-                        <li>Object Oriented Programming</li>
-                        <li>Data Structures and Algorithms</li>
-                        <li>Web Engineering</li>
-                        <li>Artificial Intelligence</li>
-                        <li>Human Computer Interaction</li>
-                        <li>Computer Graphics</li>
-                        <li>Database Management Systems</li>
-                        <li>Distributed Database Systems</li>
-                        <li>Discrete Mathematics</li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
+        <!-- Education Section -->
+        <section class="education">
+            <h2>Education</h2>
+            <p>Graduated with a 3.76 GPA. Here's a list of the relevant courses I took:</p>
+            <ul>
+                <li>Object Oriented Programming</li>
+                <li>Data Structures and Algorithms</li>
+                <li>Web Engineering</li>
+                <li>Artificial Intelligence</li>
+                <li>Human-Computer Interaction</li>
+                <li>Computer Graphics</li>
+                <li>Database Management Systems</li>
+                <li>Distributed Database Systems</li>
+                <li>Discrete Mathematics</li>
+            </ul>
+        </section>
 
-        <section>
-            <h3>Reviews from my Teachers</h3>
-            <table border="1" width="100%" cellspacing="0" cellpadding="10">
-                <tr>
-                    <td>
-                        <p>John Doe was a brilliant student; always stood out with his assignments.</p>
-                        <p><strong>Jane Doe</strong><br>Assistant Professor</p>
-                    </td>
-                    <td>
-                        <p>John Doe was a brilliant student; always stood out with his assignments.</p>
-                        <p><strong>Jane Doe</strong><br>Assistant Professor</p>
-                    </td>
-                    <td>
-                        <p>John Doe was a brilliant student; always stood out with his assignments.</p>
-                        <p><strong>Jane Doe</strong><br>Assistant Professor</p>
-                    </td>
-                </tr>
-            </table>
+        <!-- Reviews Section -->
+        <section class="reviews">
+            <h2>Feedback from Peers</h2>
+            <div class="review">
+                <p>John Doe was a brilliant student; always stood out with his assignments.</p>
+                <footer>Jane Doe, Assistant Professor</footer>
+            </div>
+            <div class="review">
+                <p>John Doe's work always exceeded expectations. Highly recommended!</p>
+                <footer>Mike Smith, Senior Developer</footer>
+            </div>
+            <div class="review">
+                <p>Exceptional teamwork and technical skills displayed during all projects.</p>
+                <footer>Sarah Johnson, Project Manager</footer>
+            </div>
         </section>
     </main>
 
+    <!-- Footer Section -->
     <footer>
-        <p>© all rights reserved 2025</p>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
     </footer>
 </body>
 </html>
